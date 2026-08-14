@@ -1,12 +1,13 @@
 :root {
-  --background: #0b0b0f;
-  --surface: #14141a;
-  --surface-strong: #1b1b22;
-  --text: #ecedf1;
-  --muted: #a4a5ad;
-  --line: #292a31;
+  --background: #fafafa;
+  --surface: #f1f1f4;
+  --surface-strong: #e7e7eb;
+  --text: #131316;
+  --muted: #60616a;
+  --line: #d6d6dc;
   --accent: #2b3ef0;
   --accent-hover: #1a2699;
+  --accent-text: #fafafa;
   color: var(--text);
   background: var(--background);
   font-family:
@@ -260,7 +261,7 @@ h3 {
   height: 2.4rem;
   color: var(--text);
   border: 1px solid var(--line);
-  background: color-mix(in srgb, var(--background) 78%, transparent);
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
   cursor: pointer;
   transition:
     background 0.2s ease,
@@ -269,6 +270,7 @@ h3 {
 .project-controls button:hover {
   background: var(--accent-hover);
   border-color: var(--accent-hover);
+  color: var(--accent-text);
 }
 .split-section {
   display: grid;
@@ -345,7 +347,7 @@ h3 {
 }
 .button {
   background: var(--accent);
-  color: var(--text);
+  color: var(--accent-text);
   padding: 0.8rem 1rem;
   font-size: 0.875rem;
   font-weight: 700;
