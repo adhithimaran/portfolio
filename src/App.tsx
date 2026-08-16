@@ -103,21 +103,18 @@ function App() {
           <h2 id="contact-heading">Contact</h2>
           <p>Use this space for a short invitation to get in touch.</p>
           <div className="contact-actions">
-            <a className="button" href="mailto:hello@example.com">
-              hello@example.com
-            </a>
-            <a className="button button-secondary" href="/resume.pdf" download>
-              Download résumé
+            <a className="button" href="mailto:adhithimaran@gmail.com">
+              adhithimaran@gmail.com
             </a>
           </div>
           <div className="social-links">
-            <a href="#">GitHub ↗</a>
-            <a href="#">LinkedIn ↗</a>
+            <a href="https://github.com/adhithimaran">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/adhithimaran/">LinkedIn ↗</a>
           </div>
         </section>
       </main>
       <footer>
-        <span>© 2026 Your Name</span>
+        <span>© 2026 Adhithi Maran </span>
         <a href="#top">Back to top ↑</a>
       </footer>
     </>
