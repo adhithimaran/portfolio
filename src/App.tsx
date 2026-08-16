@@ -1,16 +1,16 @@
 import { motion } from 'framer-motion';
+import { Experience } from './components/Experience';
 import { HeroScene } from './components/HeroScene';
 import { ProjectSlider } from './components/ProjectSlider';
-import { skills } from './data/skills';
 
-const navItems = ['Projects', 'About', 'Skills', 'Contact'];
+const navItems = ['Projects', 'About', 'Experience', 'Contact'];
 
 function App() {
   return (
     <>
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="Back to top">
-          YN<span>.</span>
+          Adhithi Maran<span>.</span>
         </a>
         <nav aria-label="Primary navigation">
           {navItems.map((item) => (
@@ -31,15 +31,12 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
           >
-            <p className="eyebrow">Independent creative / 2026</p>
-            <h1 id="hero-heading">
-              A place for work
-              <br />
-              with a point of view.
-            </h1>
+            <p className="eyebrow">
+              Computer Science @ University of Minnesota | Class of 2026
+            </p>
+            <h1 id="hero-heading">My Portfolio</h1>
             <p className="hero-intro">
-              A placeholder introduction for a designer and developer making
-              considered digital experiences.
+              Hello! I'm a recent CS grad, welcome to my personal portfolio!
             </p>
           </motion.div>
         </section>
@@ -49,7 +46,7 @@ function App() {
           aria-labelledby="projects-heading"
         >
           <div className="section-heading container">
-            <p className="eyebrow">Selected work</p>
+            <p className="eyebrow">My work</p>
             <h2 id="projects-heading">Projects</h2>
           </div>
           <ProjectSlider />
@@ -60,7 +57,7 @@ function App() {
           aria-labelledby="about-heading"
         >
           <div className="section-heading">
-            <p className="eyebrow">A little context</p>
+            <p className="eyebrow">Introduction</p>
             <h2 id="about-heading">About</h2>
           </div>
           <div className="about-content">
@@ -72,43 +69,38 @@ function App() {
             </div>
             <div className="prose">
               <p>
-                I’m a curious designer and developer who found their way here by
-                following a long-running interest in how ideas become useful
-                things.
+                Hi there! I'm a recent computer science graduate, with a strong
+                skillset in programming and problem-solving. I enjoy immersing
+                myself in projects and collaborating with others!
               </p>
               <p>
-                This is room for a more human story: the winding path, the small
-                obsessions, and the kind of collaborators and problems that make
-                the work meaningful.
+                I've gained experience through both personal projects and formal
+                internships, and I always want to keep learning. I'm currently
+                interning on the Platform team at Western Insurance, where I
+                work on infrastructure automation and ensuring system's are
+                reliable for development teams and end users.
               </p>
             </div>
           </div>
         </section>
         <section
-          id="skills"
+          id="experience"
           className="section container split-section"
-          aria-labelledby="skills-heading"
+          aria-labelledby="experience-heading"
         >
           <div className="section-heading">
-            <p className="eyebrow">Tools of the trade</p>
-            <h2 id="skills-heading">Skills</h2>
+            <p className="eyebrow">Where I've been</p>
+            <h2 id="experience-heading">Experience</h2>
           </div>
-          <ul className="skills-grid">
-            {skills.map((skill) => (
-              <li key={skill.name}>
-                <span>{skill.label}</span>
-                {skill.name}
-              </li>
-            ))}
-          </ul>
+          <Experience />
         </section>
         <section
           id="contact"
           className="section container contact-section"
           aria-labelledby="contact-heading"
         >
-          <p className="eyebrow">Start a conversation</p>
-          <h2 id="contact-heading">Have something in mind?</h2>
+          <p className="eyebrow">Connect with me!</p>
+          <h2 id="contact-heading">Contact</h2>
           <p>Use this space for a short invitation to get in touch.</p>
           <div className="contact-actions">
             <a className="button" href="mailto:hello@example.com">

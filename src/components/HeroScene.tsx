@@ -18,7 +18,7 @@ function Shape() {
       <mesh ref={mesh} position={[offsetX, 0.4, 0]}>
         <icosahedronGeometry args={[1.45, 2]} />
         <meshStandardMaterial
-          color="#BBCEFC"
+          color="#FAD68F"
           metalness={0.25}
           roughness={0.38}
         />

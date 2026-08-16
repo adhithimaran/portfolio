@@ -74,9 +74,9 @@ export function ProjectSlider() {
                 <p>{project.description}</p>
               </div>
               <div className="project-meta">
-                <ul className="tags" aria-label="Project tags">
-                  {project.tags.map((tag) => (
-                    <li key={tag}>{tag}</li>
+                <ul className="tags" aria-label="Project skills">
+                  {project.skills.map((skill) => (
+                    <li key={skill}>{skill}</li>
                   ))}
                 </ul>
                 <a href={project.link} aria-label={`View ${project.title}`}>
